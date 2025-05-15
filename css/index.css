@@ -7,6 +7,74 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #565454;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: Arial, sans-serif;
+}
+
+/* Main heading */
+.container h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #0077b6;
+}
+
+/* Weather cards container */
+#weather-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Individual weather card */
+.weather-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 280px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.weather-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Day heading */
+.weather-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #0077b6;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+    width: 100%;
+}
+
+/* Hourly temperature */
+.weather-card p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    color: #333333;
+    width: 100%;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+    .weather-card {
+        width: 100%;
+    }
 }

@@ -1,1 +1,3 @@
-import data from './data.js';
+import fetchAndRenderWeather from './events/fetch-and-render-weather.js';
+
+fetchAndRenderWeather();
